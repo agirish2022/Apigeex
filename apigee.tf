@@ -1,6 +1,8 @@
 provider "google" {
   project=var.project_id
+  access_token = var.gcp_access_token
 }
+
 data "google_project" "project"{
 
 }
