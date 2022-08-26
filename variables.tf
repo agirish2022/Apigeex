@@ -1,39 +1,36 @@
 variable "project_id" {
-    type= string
+  type=string
 }
-variable "project_id2" {
-    type = string
+variable "sa" {
+  type=string
 }
 variable "network" {
-  type = string
+  type=string
 }
-variable "google_compute_global_address" {
-    type = string
+variable "sub_network" {
+  type=string
 }
 variable "region" {
-    type = string
+  type=string
 }
-variable "google_apigee_environment" {
-    type = string
+variable "df_instance" {
+  type=string
 }
-variable "google_apigee_envgroup" {
-    type = string
+variable "edition" {
+  type=string
 }
-variable "google_apigee_instance" {
-    type = string
-}
-variable "google_compute_region_backend_service" {
-    type = string
-}
-variable "google_compute_health_check" {
-    type = string
-}
-variable "google_compute_forwarding_rule" {
-    type = string
-}
-
-variable "gcp_access_token" {
+variable "private_ip_range" {
   type = string
-  description = "GCP access token"
-  sensitive   = true
+}
+variable "df_version" {
+  type=string
+}
+variable "label_value" {
+  type=string
+}
+variable "enable_logging" {
+  type = bool
+}
+variable "private_instance" {
+  type=bool
 }
